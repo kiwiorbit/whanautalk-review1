@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whanau Talk</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/easy.css">
+    <link rel="stylesheet" href="./css/slick.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="shortcut icon" href="./images/contrastlogo.png" type="image/x-icon">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+
+<body>
+
+    <!-- Start site wrapper -->
+    <div class="wrapper">
+        <div class="header-index">
+            <!-- ====== 1.1. Header section ====== -->
+            <header>
+                <!-- Add an ID for the sidebar and ensure the navbar toggler calls the correct function -->
+                <nav class="container navbar">
+                    <a class="navbar-logo" href="/"><img src="./images/contrastlogo.png" alt="logo"></a>
+                    <div class="container-nav flex">
+                        <!-- site logo -->
+                        <button class="navbar-toggler" onclick="toggleSidebar()" type="button">
+                            <span><i class="fa-solid fa-ellipsis-vertical"></i></span> 
+                        </button>
+                        <!-- menus -->
+                        <ul class="navbar-nav flex">
+                            <li><a class="nav-link" href="#articleSection">ARTICLES</a></li>
+                            <li><a class="nav-link" href="comingsoon.html">MEET OUR TEAM</a></li>
+                            <li><a class="nav-link" href="comingsoon.html">CONTACT US</a></li>
+                            <li class="dropdown" id="navbarScrollingDropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">
+                                    SPEECH SCIENCE
+                                </a><i class="fa-solid fa-chevron-down"></i>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="comingsoon.html">Family Support Program</a></li>
+                                    <li><a class="dropdown-item" href="comingsoon.html">What is Lena?</a></li>
+                                    <li><a class="dropdown-item" href="comingsoon.html">Collaboration</a></li>
+                                    <li><a class="dropdown-item" href="comingsoon.html">Participation</a></li>
+                                    <li><a class="dropdown-item" href="comingsoon.html">About</a></li>
+                                    <li><a class="dropdown-item" href="comingsoon.html">FAQ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- Sidebar -->
+                <aside id="mySidepanel" class="sidepanel">
+                    <div class="sidebar flex">
+                        <a href=""><img src="./images/ear ori contrast.png" alt="logo"></a>
+                        <!-- Removed the close button -->
+                    </div>
+                    <div>
+                        <!-- side menus -->
+                        <ul>
+                            <li><a class="nav-link side" href="#articleSection">Publications</a></li>
+                            <li><a class="nav-link side" href="comingsoon.html">Meet our team</a></li>
+                            <li><a class="nav-link side" href="comingsoon.html">Family Support Program</a></li>
+                            <li><a class="nav-link side" href="comingsoon.html">What is Lena?</a></li>
+                            <li><a class="nav-link side" href="comingsoon.html">Collaboration</a></li>
+                            <li><a class="nav-link side" href="comingsoon.html">Participation</a></li>
+                            <li><a class="nav-link side" href="comingsoon.html">About</a></li>
+                            <li><a class="nav-link side" href="comingsoon.html">Contact us</a></li>
+                            <li><a class="nav-link side" href="comingsoon.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                
+
+                <!-- searchbar -->
+                <!-- <div id="search-bar">
+                    <div class="btn-light" onclick="close_search_bar()"><i class="fa-solid fa-xmark"></i></div>
+                    <form method="search" action="#">
+                        <input type="search" required placeholder="Search...">
+                        <button type="submit" class="btn-light">Search</button>
+                    </form>
+                </div> -->
+            </header>
+            <!-- ====== End of 1.1. Header section ====== -->
+            <!-- ====== 1.2. hero section ====== -->
+            <section class="hero">
+                <div class="container">
+                    <div>
+                        <div class="center-data">
+                            <div id="gooey"></div>
+                            <h1 data-aos="fade-up" ><span class="gradient-text-2">Conversations</span> that Inspire</h1>
+                            <div data-aos="fade-up" data-aos-delay="200" class="tagline">
+                                <h3>Empowering Kiwi families with children with hearing difference with the necessary tools and resources in their journey</h3>
+                                <div class="center-btn flex">
+                                    <a  href="/" target="_blank" class="hero-button" >
+                                        <div class="svg-wrapper-1">
+                                            <div class="svg-wrapper"><i class="fa-solid fa-book-open"></i>
+                                        </div>
+                                        </div>
+                                        <span>See Research</span>
+                                    </a>
+
+                                    <a href="/" target="_blank" class="btn-secondary">What is FSP ?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+            
+            <!-- ====== End of 1.2. hero section ====== -->
+        </div>
+        <!-- ====== 1.3. card section ====== -->
+        
+        <!-- ====== End of 1.3. card section ====== -->
+
+        <!-- ========== Research Section Begins =========== -->
+
+        <section class="research dark">
+            <div class="container">
+                <div class="uline researchsvg" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="3000"></div>
+                <div class="flex-wrap exp-center" data-aos="fade-up">
+                    <div>
+                        <h2>Why are <span class="gradient-text">interactions</span> at home the best?</h2>
+                        <p class="mt-1">In the familial environment, where parents hold valuable insights into their child's needs, the primary focus remains steadfastly on nurturing their well-being and development. Emphasizing the creation of a calm and supportive atmosphere, disruptions are minimized to enhance learning opportunities. This is particularly crucial during the first 1,000 days of life, a key learning window where every experience profoundly shapes a child's future path.
+                        </p>
+                    </div>
+                    
+                    <hr>
+                </div>
+                <div class="flex flex-sb aim">
+                    <div class="w-50 p-relative flex flex-center" data-aos="zoom-in">
+                        <div class="research_mask">
+                            <figure><img src="./images/aim.png" alt="img"></figure>
+                        </div>
+                        
+                    </div>
+                    <div class="research-left flex flex-col gap-2 mt-1">
+                        <div class="flex gap-1 research-question" data-aos="fade-up" data-aos-delay="300">
+                            <h2>This study will address following research questions.</h2>
+                        </div>
+                        <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="flex flex-center">
+                                <h3>Q1</h3>
+                            </div>
+                            <div>
+                                <!-- <h4>Focus is on the child</h4> -->
+                                <p>Does FSP increase AWC, CTC, and optimal interaction styles compared to baseline cross-behavior assessments?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="flex flex-center">
+                                <h3>Q2</h3>
+                            </div>
+                            <div>
+                                <p>How increased open-ended questions support a child’s oral language skills? 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="flex flex-center">
+                                <h3>Q3</h3>
+                            </div>
+                            <div>
+                                <p>How increased expansion support a child’s oral language skills?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="flex flex-center">
+                                <h3>Q4</h3>
+                            </div>
+                            <div>
+                                <p>How increased recast support a child’s oral language skills?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-30 flex flex-end article-box">
+                            <a href="#articleSection" class="btn-light" >View Articles
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        
+
+        <section class="article-section">
+            <div class="video-container" data-aos="fade-up">
+                <video autoplay loop muted playsinline>
+                <source src="./images/earlytalk2.mp4" type="video/mp4">Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="articleSection" class="container">
+                <div id="gooey2">
+
+                </div>
+                <div class="article-section-heading" data-aos="zoom-in">
+                    <div class="uline publications"></div>
+                    <p>Here are some of our latest articles explaining what we have been up to and giving you insights into our Speech Science Dept</p>
+                </div>
+                <div class="grid">
+
+                    <div class="article-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="backglow"></div>
+                        <div class="backborderglow"></div>
+                        <div class="card-title">Jun 2024<span class="article-new">Most Recent!</span></div>
+                        <div class="card-text"><a>Sultana, N., Brock, A. S., & Purdy, S. C. (2024). Caregiver response types and children language outcomes in preschoolers with and without hearing loss in Aotearoa New Zealand. Journal of the Royal Society of New Zealand, 1–22.
+                        <a href="https://doi.org/10.1080/03036758.2024.2356183" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="article-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="backglow"></div>
+                        <div class="backborderglow"></div>
+                        <div class="card-title">Apr 2024</div>
+                        <div class="card-text"><a>Sultana, N., Wong, L. L., & Purdy, S. C. (2024). Analysis of natural language input in preschool children with and without hearing loss: quantity, caregiver response types, and influence of demographic factors.
+                        <a href="https://www.tandfonline.com/doi/full/10.1080/2050571X.2024.2340274" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="article-card" data-aos="fade-up"  data-aos-delay="300">
+                        <div class="backglow"></div>
+                        <div class="backborderglow"></div>
+                        <div class="card-title">Aug 2020</div>
+                        <div class="card-text"><a>Sultana, N., Wong, L. L., &amp; Purdy, S. C. (2020). Natural language input: Maternal education, socioeconomic deprivation, and language outcomes in typically developing children. <em>Language, Speech, and Hearing Services in Schools</em>, <em>51</em>(4), 1049-1070.</a>
+                        <a href="https://pubs.asha.org/doi/abs/10.1044/2020_LSHSS-19-00095" target="_blank""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="article-card" data-aos="fade-up"   data-aos-delay="400">
+                        <div class="backglow"></div>
+                        <div class="backborderglow"></div>
+                        <div class="card-title">Jun 2020</div>
+                        <div class="card-text"><a>Sultana, N., Wong, L. L., &amp; Purdy, S. C. (2020). Dataset on the calculations of daily adult word and conversational turn counts, and use of styles of oral interaction in 2–5-year olds with hearing loss in New Zealand. <em>Data in Brief</em>, <em>30</em>, 105372</em>, <em>51</em>(4), 1049-1070.</a>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S2352340920302663" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="article-card" data-aos="fade-up"   data-aos-delay="500">
+                        <div class="backglow"></div>
+                        <div class="backborderglow"></div>
+                        <div class="card-title">Sep 2019</div>
+                        <div class="card-text"><a>Sultana, N., Wong, L. L., &amp; Purdy, S. C. (2019). Analysis of amount and style of oral interaction related to language outcomes in children with hearing loss: A systematic review (2006–2016). <em>Journal of Speech, Language, and Hearing Research</em>, <em>62</em>(9), 3470-3492.</a>
+                        <a href="https://pubs.asha.org/doi/abs/10.1044/2019_JSLHR-L-19-0076" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="article-card" data-aos="fade-up"   data-aos-delay="600">
+                        <div class="backglow"></div>
+                        <div class="backborderglow"></div>
+                        <div class="card-title">Aug 2017</div>
+                        <div class="card-text"><a>Wong, L. L., Sultana, N., &amp; Chen, Y. (2017). Language Matters: Considerations in Measuring Speech Intelligibility. <em>The Hearing Journal</em>, <em>70</em>(8), 8-9.</a>
+                        <a href="https://pubs.asha.org/doi/abs/10.1044/2019_JSLHR-L-19-0076" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div> 
+                    </div>
+
+
+                    <div class="article-card" data-aos="fade-up"   data-aos-delay="700">
+                        <div class="backglow"></div>
+                        <div class="backborderglow"></div>
+                        <div class="card-title">Nov 2014</div>
+                        <div class="card-text"><a>Sultana N, Butt A kamal,  &amp; Khan MSG. Speech Intelligibility in Hearing Aid users with and without Auditory Training: <em>JRCRS.</em> 2014; 2(2): 26-32</a>
+                        <a href="https://journals.riphah.edu.pk/index.php/jrcrs/article/view/436" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+
+            </div>
+        </section>
+
+        <section class="lena-section">
+            <div class="container">
+                <div class="uline what-is-lena" data-aos="zoom-in" ></div>
+                <div class="lena-1">
+                    <div class="lena-center" data-aos="fade-up">
+                            <div>
+                                <h2>✨Building brain through <span class="gradient-text">Conversations,</span></h2>
+                                <p>Did you know that a playful exchange of words could build brains? With LENA technology, we measure these precious "conversational turns," counting each time an adult speaks and a child chimes in (or vice versa) within five seconds. From a baby's giggle to a toddler's pretend words, every sound matters. These turns are LENA’s way of capturing the vital "serve and return" interactions that spark brain development!</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="lena-tech">
+                    <div class="lena-device" data-aos="zoom-in">
+                        <img class="lena-image" decoding="async" src="./images/child-pedometer.jpeg">
+                        <h2 class="image-title">
+                            <span>LENA Device</span>
+                        </h2>
+                        <div class="image-detail">
+                            <p>The LENA device, a compact and child-friendly recorder, is designed for children to wear for a day. It adheres to both U.S. and international safety regulations for electronics and toys. Unlike a cellphone, it doesn't transmit data and employs low-power processors similar to those found in hearing aids.</p>
+                        </div>
+                    </div>
+
+                    <div class="lena-software" data-aos="zoom-in" data-aos-delay="500">
+                        <img class="lena-image"  decoding="async" src="./images/software.jpeg">
+                        <h2 class="image-title">
+                            <span>LENA Software</span>
+                        </h2>
+                        <div class="image-detail">
+                            <p>The LENA software analyzes the audio recorded by the device, converting it into valuable information about speech. This data is then presented in easily understandable reports that can be shared with caregivers. Through secure online tools, program management becomes efficient, with real-time assessments of fidelity and effectiveness built-in.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lena-video">
+                    <h3>Watch How it <span class="gradient-text">Works,</span></h3>
+                    <iframe data-aos="fade-up" width="757" height="450" src="https://www.youtube.com/embed/8DAW9g-NoLA?si=GWJXaMzBvZKYkD2j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe data-aos="fade-up" data-aos-delay="500" width="757" height="450" src="https://www.youtube.com/embed/XJMzuaR1QDI?si=tAvRKlNLpTd8FXkd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <a href="https://www.lena.org/" target="_blank">Click here to learn more: https://www.lena.org/</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ====== 1.5. About us section ====== -->
+        <section class="about">
+            <div class="container">
+                <div class="uline fsp" data-aos="zoom-in" data-aos-offset="100"></div>
+                <div class="about-data flex-sb">
+                    <div class="w-50" data-aos="fade-up">
+                        <p>The purpose of the programme is to facilitate the development of language learning skills in children with hearing differences by engaging with the families and whanau of children with hearing differences. 
+                        </p>
+                        <h2><span class="gradient-text">'Family Support Programme'</span>  is developed by a multidisciplinary team of proffesionals including...
+                        </h2>
+                        <div class="flex gap-1 mt-15">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <h5>Scientists
+                            </h5>
+                        </div>
+                        <div class="flex gap-1 mt-15">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <h5>Audiologists</h5>
+                        </div>
+                        <div class="flex gap-1 mt-15">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <h5>Speech-language therapists</h5>
+                        </div>
+                        <div class="flex gap-1 mt-15">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <h5>Auditory-verbal therapists</h5>
+                        </div>
+                        <div class="flex gap-2 mt-30 center-btn">
+                            <a href="services.html" class="btn-light">Meet the Team</a>
+                            <a href="about.html" class="btn-dark">Collaboration</a>
+                        </div>
+                    </div>
+                    <div class="about-imgs flex flex-center w-50" data-aos="fade-down">
+                        <div>
+                            <figure>
+                                <img src="./images/staff.jpeg" alt="img">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="participate-section">
+            <div class="container">
+                <div class="uline participate-heading" data-aos="zoom-in"></div>
+                <div class="top-container participate-center">
+                    <div class="heading" data-aos="fade-up">
+                        <h2>✨Call for <span class="gradient-text">participation</span> in Caregiver's Coaching Study</h2>
+                        <p class="publish-date">Published on May 8, 2023</p>
+                        <div class="introduction">
+                            <p>We require families of children with hearing loss to take part in the study. Caregivers and their children with hearing loss will participate in pre-post assessments and 3 training sessions either in person or via video link. We will support parents on how to interact and engage their children with hearing loss in different natural play-based learning activities. We will only require full-day LENA recordings to collect data. and data is automatically deleted once its has its derived useful information.</p>
+                        </div>
+                    </div>
+        
+                    <div>
+                        <div class="card" data-aos="fade-left">
+                            <div class="card-image">
+                                <img src="./images/checklist.jpeg" alt="Card Image">
+                            </div>
+                            <div class="card-content checklist">
+                                <h2>Who can participate?</h2>
+                                <p>The research study is open to children with hearing loss and their parents or caregivers. Caregivers can include parents or any other adults responsible for the child's care. Families are eligible to participate if they have a child with hearing loss who meets the following criteria:</p>
+                                <ul>
+                                    <li>✔️ Age: Between 1 to 5 years old.</li>
+                                    <li>✔️ Passed Newborn Hearing Screening.</li>
+                                    <li>✔️ Diagnosed with hearing loss between 3-6 months of age.</li>
+                                    <li>✔️ Regularly uses hearing devices such as cochlear implants or hearing aids.</li>
+                                    <li>✔️ Resides in a home where one or more languages are spoken.</li>
+                                    <li>✔️ Primarily speaks English, particularly within the household.</li>
+                                    <li>✔️ Can copy some spoken words.</li>
+                                    <li>✔️ Does not have any other disabilities aside from hearing loss.</li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <div class="card gift-card" data-aos="fade-right">
+                            <div class="card-content">
+                                <h2>Compensation/Gift</h2>
+                                <p>Participants will receive a $25 E-voucher for each training session attended, as recognition of their time and the associated costs of participating in the research. Additionally, families will be provided with a $10 voucher for mobile phone data top-ups to facilitate their participation in phone call follow-ups. Interested families are encouraged to contact the research team for more information on participation.</p>
+                            </div>
+                            <div class="card-image">
+                                <img src="./images/gift.jpeg" alt="Card Image">
+                            </div>
+                        </div>
+        
+                        <div class="card" data-aos="fade-left">
+                            <div class="card-image">
+                                <img src="./images/uni of auckland.png" alt="Card Image">
+                            </div>
+                            <div class="card-content">
+                                <h2><span class="gradient-text">Participate</span> in our research</h2>
+                                <p>Become a part of a community dedicated to enhancing the learning experience for children with hearing differences and evolve with us as we embark on our groundbreaking research program. Together, let's make a difference in the lives of our children. Connect, share, and grow with us.</p>
+                                <a href="#contactForm" class="cta-button">Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="share" data-aos="fade-up">
+                            <p>Like what you read? Share this article online!</p>
+                            <div class="share-card">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://kiwiorbit.github.io/fsptest6" class="socialContainer containerOne" target="_blank">
+                                    <i class="fa-brands fa-facebook socialSvg"></i>
+                                </a>
+                                <a href="https://twitter.com/intent/tweet?url=https://kiwiorbit.github.io/fsptest6&text=Check%20this%20out!" class="socialContainer containerTwo" target="_blank">
+                                    <i class="fa-brands fa-twitter socialSvg"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://kiwiorbit.github.io/fsptest6/&title=Great%20Article&summary=This%20is%20a%20great%20article%20I%20found&source=YourWebsite" class="socialContainer containerThree" target="_blank">
+                                    <i class="fa-brands fa-linkedin socialSvg"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="work">
+            <!-- <video autoplay muted loop id="background-video">
+                <source src="./images/test-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+            <div class="container position-relative">
+                <div class="fact-center" data-aos="fade-up" data-aos-duration="3000">
+                    <div>
+                        <h2>✨For a <span class="gradient-text">Child,</span> responsive relationships are the foundation...</h2>
+                        <h4>and it all starts with interactions</h4>
+                    </div>
+                </div>
+                <div class="work-para text-center" data-aos="fade-up">
+                    <p>Simply follow the steps
+                    </p>
+                </div>
+                <div class="work-line flex flex-center gap-1 flex-wrap p-relative">
+                    <div data-aos="zoom-in" data-aos-delay="200">
+                        <h2>01.</h2>
+                        <h4>Fill Contact form</h4>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="400">
+                        <h2>02.</h2>
+                        <h4>Meet Our Team</h4>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="600">
+                        <h2>03.</h2>
+                        <h4>Get Free Training</h4>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="800">
+                        <h2>04.</h4>
+                        <h4>Apply on your Child</h4>
+                    </div>
+                </div>
+                <div class="flex flex-center" data-aos="zoom-in">
+                    <a href="#contactForm" class="btn-light">Contact Now</a>
+                </div>
+            </div>
+        </section>
+        
+
+
+        <!-- team section begins -->
+
+        <section class="team">
+            <div class="container">
+                <div class="team-heading" data-aos="fade-up">
+                        <h2 class="meet-our-team">Meet Our <span class="gradient-text-2">Team</span>
+                        </h2>
+                        <p class="mt-1 description">We are coaching parents/caregivers to expose optimal quantity and quality of interaction with their children with hearing differences.
+                        </p>
+                </div>
+
+                <div class="team-slider flex mt-15 team-grid" data-aos="zoom-in">
+                    <div class="team-member">
+                        <div class="team-img"><img src="./images/nuzhat.png" alt="Avatar"></div>
+                        <div class="team-info">
+                            <h3>Nuzhat Sultana</h3>
+                            <h4 class="title">Lecturer/SLT</h4>
+                            <p>Dr. Nuzhat Sultana completed her Ph.D from The University of Hongkong, She is a Lecturer of Speech Science in the School of Psychology at The University of Auckland, Currently her research is focused on language development in young children, focusing on those with and without hearing loss. Her work includes early intervention and speech-language therapy to support caregiver-child interactions. She is developing a programme to help parents optimize verbal interactions using LENA technology. This research benefits children with hearing loss and other SLC challenges. Dr. Sultana also supervises research and provides professional guidance for speech-language therapists and students.</p>
+                        </div>
+
+                        <div class="social-card2">
+                            <a href="mailto:nuzhat.sultana@auckland.ac.nz" class="social-link1">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/nuzhatsultana" target="_blank" class="social-link2">
+                                <i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://scholar.google.com/citations?hl=en&user=OJdpiCAAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" class="social-link3">
+                                <svg role="img" viewBox="0 0 28 28" aria-hidden="true"><g transform="translate(-28 -254)"><path class="svgs__sidebarIconForegroundColour___xwJMh" fill="currentColor" stroke="none" d="M798.628,433.825l-7.4,4.628h5.083c-.019.07-.049.133-.065.206a3.939,3.939,0,0,0-.076.726c0,3.306,3.379,2.933,3.379,2.933v.842c0,.341.448.223.5.916-.224,0-4.68-.128-4.68,2.878s3.933,2.869,3.933,2.869,4.543.2,4.543-3.529c0-2.229-2.6-2.955-2.6-3.85s1.961-1.172,1.961-3.294a2.975,2.975,0,0,0-.479-2.057.638.638,0,0,0-.085-.076c-.007-.006-.016-.011-.023-.018h.113l1.917-1.437v1.965a.48.48,0,0,0,.01.107.925.925,0,0,0-.473.819v.925a.926.926,0,1,0,1.851.026v-.951a.926.926,0,0,0-.474-.819.426.426,0,0,0,.011-.107v-2.661l1.388-1.041Zm.639,2.825a1.461,1.461,0,0,1,.79.2,1.917,1.917,0,0,1,.532.405,3.071,3.071,0,0,1,.757,1.376c.352,1.343-.1,2.634-1.054,2.88-.938.265-1.984-.611-2.346-1.944a3.115,3.115,0,0,1,.043-1.778l.008-.018.011-.008a1.638,1.638,0,0,1,.24-.522,1.31,1.31,0,0,1,.754-.55A1.423,1.423,0,0,1,799.267,436.65Zm.362,7.99c1.567-.117,2.9.746,3,1.918.065,1.163-1.141,2.2-2.719,2.3s-2.92-.744-2.995-1.907S798.051,444.758,799.629,444.64Z" transform="translate(-757.223 -173.825)"></path></g></svg>
+                            </a>
+                            <a href="https://profiles.auckland.ac.nz/nuzhat-sultana" target="_blank" class="social-link4">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                            <a href="https://orcid.org/0000-0001-6196-3976" target="_blank" class="social-link5">
+                                <img src="./images/orcid.svg" alt="">
+                            </a>
+
+                        </div>             
+
+                    </div>
+                    <div class="team-member">
+                        <div class="team-img"><img src="./images/Suzanne.png" alt="Avatar"></div>
+                        <div class="team-info">
+                            <h3>Suzanne Purdy</h3>
+                            <h4 class="title">Professor</h4>
+                            <p>Suzanne (Te Rarawa, Ngāi Takoto) completed her MSc at University of Auckland, then trained as a clinical audiologist at the University of Melbourne in 1981. She worked as a clinical audiologist for six years but was lured back into hearing-related research. She then completed a PhD at the University of Iowa before starting her academic career in 1990. Her many hearing-related interests include sensory neuroscience, auditory processing, clinical audiology and equity in hearing health services. Due to the close link with audiology, she is very curious about auditory imagery as part of the rich tapestry of human auditory experiences.</p>
+                        </div>
+                        <div class="social-card2">
+                            <a href="mailto:nuzhat.sultana@auckland.ac.nz" class="social-link1">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/nuzhatsultana" class="social-link2">
+                                <i class="fa-brands fa-linkedin-in"></i></a>
+                            <a class="social-link3">
+                                <svg role="img" viewBox="0 0 28 28" aria-hidden="true"><g transform="translate(-28 -254)"><path class="svgs__sidebarIconForegroundColour___xwJMh" fill="currentColor" stroke="none" d="M798.628,433.825l-7.4,4.628h5.083c-.019.07-.049.133-.065.206a3.939,3.939,0,0,0-.076.726c0,3.306,3.379,2.933,3.379,2.933v.842c0,.341.448.223.5.916-.224,0-4.68-.128-4.68,2.878s3.933,2.869,3.933,2.869,4.543.2,4.543-3.529c0-2.229-2.6-2.955-2.6-3.85s1.961-1.172,1.961-3.294a2.975,2.975,0,0,0-.479-2.057.638.638,0,0,0-.085-.076c-.007-.006-.016-.011-.023-.018h.113l1.917-1.437v1.965a.48.48,0,0,0,.01.107.925.925,0,0,0-.473.819v.925a.926.926,0,1,0,1.851.026v-.951a.926.926,0,0,0-.474-.819.426.426,0,0,0,.011-.107v-2.661l1.388-1.041Zm.639,2.825a1.461,1.461,0,0,1,.79.2,1.917,1.917,0,0,1,.532.405,3.071,3.071,0,0,1,.757,1.376c.352,1.343-.1,2.634-1.054,2.88-.938.265-1.984-.611-2.346-1.944a3.115,3.115,0,0,1,.043-1.778l.008-.018.011-.008a1.638,1.638,0,0,1,.24-.522,1.31,1.31,0,0,1,.754-.55A1.423,1.423,0,0,1,799.267,436.65Zm.362,7.99c1.567-.117,2.9.746,3,1.918.065,1.163-1.141,2.2-2.719,2.3s-2.92-.744-2.995-1.907S798.051,444.758,799.629,444.64Z" transform="translate(-757.223 -173.825)"></path></g></svg>
+                            </a>
+                            <a href="https://profiles.auckland.ac.nz/nuzhat-sultana" target="_blank" class="social-link4">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                            <a href="https://orcid.org/0000-0001-9978-8173" target="_blank" class="social-link5">
+                                <img src="./images/orcid.svg" alt="">
+                            </a>
+                        </div> 
+                    </div>
+                    <div class="team-member">
+                        <div class="team-img"><img src="./images/aleah.png" alt="Avatar"></div>
+                        <div class="team-info">
+                            <h3>Aleah Brock</h3>
+                            <h4 class="title">Assistant Professor</h4>
+                            <p>Aleah is an assistant professor at the University of West Georgia, USA. She completed her PhD at the University of Georgia with research focused on coaching caregivers to use facilitative language techniques with their children who are deaf or hard of hearing (DHH). Prior to obtaining her PhD, Aleah worked as a speech-language pathologist at the Georgia School for the Deaf and continues to provide early intervention services to families of children who are DHH. Her current research interests investigate the impact of family-centered early intervention on language outcomes for children who are DHH, with a particular focus on optimizing caregivers' linguistic input to their children. </p>
+                        </div>
+                        <div class="social-card2">
+                            <a href="mailto:nuzhat.sultana@auckland.ac.nz" class="social-link1">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/nuzhatsultana" class="social-link2">
+                                <i class="fa-brands fa-linkedin-in"></i></a>
+                            <a class="social-link3">
+                                <svg role="img" viewBox="0 0 28 28" aria-hidden="true"><g transform="translate(-28 -254)"><path class="svgs__sidebarIconForegroundColour___xwJMh" fill="currentColor" stroke="none" d="M798.628,433.825l-7.4,4.628h5.083c-.019.07-.049.133-.065.206a3.939,3.939,0,0,0-.076.726c0,3.306,3.379,2.933,3.379,2.933v.842c0,.341.448.223.5.916-.224,0-4.68-.128-4.68,2.878s3.933,2.869,3.933,2.869,4.543.2,4.543-3.529c0-2.229-2.6-2.955-2.6-3.85s1.961-1.172,1.961-3.294a2.975,2.975,0,0,0-.479-2.057.638.638,0,0,0-.085-.076c-.007-.006-.016-.011-.023-.018h.113l1.917-1.437v1.965a.48.48,0,0,0,.01.107.925.925,0,0,0-.473.819v.925a.926.926,0,1,0,1.851.026v-.951a.926.926,0,0,0-.474-.819.426.426,0,0,0,.011-.107v-2.661l1.388-1.041Zm.639,2.825a1.461,1.461,0,0,1,.79.2,1.917,1.917,0,0,1,.532.405,3.071,3.071,0,0,1,.757,1.376c.352,1.343-.1,2.634-1.054,2.88-.938.265-1.984-.611-2.346-1.944a3.115,3.115,0,0,1,.043-1.778l.008-.018.011-.008a1.638,1.638,0,0,1,.24-.522,1.31,1.31,0,0,1,.754-.55A1.423,1.423,0,0,1,799.267,436.65Zm.362,7.99c1.567-.117,2.9.746,3,1.918.065,1.163-1.141,2.2-2.719,2.3s-2.92-.744-2.995-1.907S798.051,444.758,799.629,444.64Z" transform="translate(-757.223 -173.825)"></path></g></svg>
+                            </a>
+                            <a href="https://profiles.auckland.ac.nz/nuzhat-sultana" target="_blank" class="social-link4">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                            <a href="https://orcid.org/0000-0001-9744-7324" target="_blank" class="social-link5">
+                                <img src="./images/orcid.svg" alt="">
+                            </a>
+                        </div> 
+                    </div>
+                    <div class="team-member">
+                        <div class="team-img"><img src="./images/liz.png" alt="Avatar"></div>
+                        <div class="team-info">
+                            <h3>Liz Fairgray</h3>
+                            <h4 class="title">Clinical Educator</h4>
+                            <p>Liz Fairgray is a Speech-Language Therapist and Auditory Verbal Therapist with 30 years of expertise in helping children with communication difficulties, particularly those with hearing loss. She received her postgraduate degree in Speech Pathology & Audiology in California and was the first New Zealander to become a Certified Auditory Verbal Therapist. Liz played a crucial role as the founding therapist at The Hearing House, emphasizing parent support as a cornerstone of her approach. She continues to advance her field through research, teaching, and serving as the NZSTA Expert Advisor for Child Hearing Loss. Currently, Liz is focused on supporting parents of children with hearing loss, building on her lifelong commitment to this area.</p>
+                        </div>
+                        <div class="social-card2">
+                            <a href="mailto:nuzhat.sultana@auckland.ac.nz" class="social-link1">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/nuzhatsultana" class="social-link2">
+                                <i class="fa-brands fa-linkedin-in"></i></a>
+                            <a class="social-link3">
+                                <svg role="img" viewBox="0 0 28 28" aria-hidden="true"><g transform="translate(-28 -254)"><path class="svgs__sidebarIconForegroundColour___xwJMh" fill="currentColor" stroke="none" d="M798.628,433.825l-7.4,4.628h5.083c-.019.07-.049.133-.065.206a3.939,3.939,0,0,0-.076.726c0,3.306,3.379,2.933,3.379,2.933v.842c0,.341.448.223.5.916-.224,0-4.68-.128-4.68,2.878s3.933,2.869,3.933,2.869,4.543.2,4.543-3.529c0-2.229-2.6-2.955-2.6-3.85s1.961-1.172,1.961-3.294a2.975,2.975,0,0,0-.479-2.057.638.638,0,0,0-.085-.076c-.007-.006-.016-.011-.023-.018h.113l1.917-1.437v1.965a.48.48,0,0,0,.01.107.925.925,0,0,0-.473.819v.925a.926.926,0,1,0,1.851.026v-.951a.926.926,0,0,0-.474-.819.426.426,0,0,0,.011-.107v-2.661l1.388-1.041Zm.639,2.825a1.461,1.461,0,0,1,.79.2,1.917,1.917,0,0,1,.532.405,3.071,3.071,0,0,1,.757,1.376c.352,1.343-.1,2.634-1.054,2.88-.938.265-1.984-.611-2.346-1.944a3.115,3.115,0,0,1,.043-1.778l.008-.018.011-.008a1.638,1.638,0,0,1,.24-.522,1.31,1.31,0,0,1,.754-.55A1.423,1.423,0,0,1,799.267,436.65Zm.362,7.99c1.567-.117,2.9.746,3,1.918.065,1.163-1.141,2.2-2.719,2.3s-2.92-.744-2.995-1.907S798.051,444.758,799.629,444.64Z" transform="translate(-757.223 -173.825)"></path></g></svg>
+                            </a>
+                            <a href="https://profiles.auckland.ac.nz/nuzhat-sultana" target="_blank" class="social-link4">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </div> 
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="collaboration-section">
+
+                <div class="collab-center container gap-2">
+                    <div class="collaboration-info" data-aos="fade-down">
+                        <h2>Help our team discover</h2>
+                        <h2><span class="gradient-text">Language Environment</span></h2>
+                        <h4>We are happy to partner with people all over the globe in our research. If you are interested in collaborating with us,</h4>
+                    </div>
+                    <div class="collaboration-contact" data-aos="fade-up">
+                        <a href="#contactForm" class="btn-light">Contact us</a>
+                        <p>or Email us @</p>
+                        <a href="mailto:collaborate@researchprogram.org">nuzhat.sultana@auckland.ac.nz</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collaboration Section -->
+        
+
+                <!-- ====== 1.4. logo-section section ====== -->
+
+        <section class="logos-title-large">
+            <div class="container-5">
+                <div class="uline our-network" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="3000"></div>
+                <div class="logo-wrapper">
+                    <img data-aos="zoom-out" data-aos-offset="100" data-aos-duration="2000" data-aos-delay="100" src="./images/logo-section/asha.png" loading="lazy" alt="Arise Health logo" class="logo-image">
+
+                    <img data-aos="zoom-out" data-aos-offset="100" data-aos-duration="2000" data-aos-delay="200"src="./images/logo-section/lena.png" loading="lazy" alt="The Paak logo" class="logo-image">
+
+                    <img data-aos="zoom-out" data-aos-offset="100" data-aos-duration="2000" data-aos-delay="300" src="./images/logo-section/thh.png" loading="lazy" alt="OE logo" class="logo-image">
+
+                    <img data-aos="zoom-out" data-aos-offset="100" data-aos-duration="2000" data-aos-delay="400" src="./images/logo-section/uoa.png" loading="lazy" alt="2020INC logo" class="logo-image">
+
+                    <img data-aos="zoom-out" data-aos-offset="100" data-aos-duration="2000" data-aos-delay="500" src="./images/logo-section/nzsta.png" loading="lazy" alt="Ephicient logo" class="clients-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== End of 1.4. logo-section section ====== -->
+
+        <!-- ====== 1.9. How we work section ====== -->
+        
+        
+        <!-- ====== End of 1.9. How we work section ====== -->
+        <section class="faq p-relative">
+            <span> </span>
+            <div class="container">
+                <div class="flex flex-wrap">
+                    <div class="w-50 text-center" data-aos="fade-up">
+                        <div class="flex gap-2 ">
+                            <hr class="faq-hr1">
+                            <h5>FAQ</h5>
+                        </div>
+                        <h2 class="mt-1">Frequently Asked Questions</h2>
+                        <p class="mt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has
+                            been the industry's standard dummy text ever.
+                        </p>
+                    </div>
+                    <div class="w-50 mt-15">
+                        <div class="accordion flex flex-col gap-2" id="accordionExample" data-aos="fade-down">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        WHAT KIND OF DIGITAL SERVICES DO YOU
+                                        PROVIDE?
+                                        <img src="./images/chevron-down-solid.svg" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        WHAT KIND OF DIGITAL SERVICES DO YOU
+                                        PROVIDE?
+                                        <img src="./images/chevron-down-solid.svg" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        WHAT IS YOUR PROCESS FOR WORKING
+                                        WITH CLIENTS?
+                                        <img src="./images/chevron-down-solid.svg" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        WHAT IS YOUR TIMELINE FOR COMPLETING
+                                        A PROJECT?
+                                        <img src="./images/chevron-down-solid.svg" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        WHAT IF I'M NOT SATISFIED WITH THE
+                                        WORK?
+                                        <img src="./images/chevron-down-solid.svg" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== 1.11. Pricing section ====== -->
+
+
+        <!-- <section class="pricing p-relative">
+            <span> </span>
+            <div class="pricing-hr flex gap-1">
+                <hr>
+                <h6>Pricing Plans</h6>
+            </div>
+            <div class="container">
+                <div class="text-center" data-aos="fade-down">
+                    <h5>PRICING</h5>
+                    <h2 class="mt-1">Pricing Plans</h2>
+                    <p class="mt-1 mb-15">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been
+                        the industry's standard dummy text ever.
+                    </p>
+                </div>
+                <div class="pricing-card flex gap-1 mt-3 text-center">
+                    <div class="flex flex-col gap-2" data-aos="fade-up">
+                        <h3>BASIC</h3>
+                        <h2>$24</h2>
+                        <h6>SEO Audits</h6>
+                        <h6>SEO Managements</h6>
+                        <h6>Digital Marketing</h6>
+                        <h6>Site Managment</h6>
+                        <a href="pricing.html" class="btn-light">Get Started</a>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3>STANDARD</h3>
+                        <h2>$594</h2>
+                        <h6>SEO Audits</h6>
+                        <h6>SEO Managements</h6>
+                        <h6>Digital Marketing</h6>
+                        <h6>Site Managment</h6>
+                        <a href="pricing.html" class="btn-secondary">Get Started</a>
+                    </div>
+                    <div class="flex flex-col gap-2" data-aos="fade-down">
+                        <h3>PREMIUM</h3>
+                        <h2>$99</h2>
+                        <h6>SEO Audits</h6>
+                        <h6>SEO Managements</h6>
+                        <h6>Digital Marketing</h6>
+                        <h6>Site Managment</h6>
+                        <a href="pricing.html" class="btn-light">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+        <!-- ====== End of 1.11. Pricing section ====== -->
+
+
+        <!-- <section class="blog">
+            <div class="container">
+                <div class="flex blog-center" data-aos="fade-down">
+                    <div class="w-66">
+                        <div class="flex gap-1">
+                            <hr class="blog-hr1">
+                            <h5>BLOGS</h5>
+                        </div>
+                        <h2 class="mt-1">Latest Posts</h2>
+                        <p class="mt-1 mb-15">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has
+                            been the industry's standard dummy text ever.
+                        </p>
+                    </div>
+                    <div class="w-33 mt-1 flex flex-end">
+                        <a href="blog.html" class="btn-secondary">See all blogs</a>
+                    </div>
+                </div>
+                <div class="flex gap-2 mt-15 blog-cards">
+                    <div data-aos="fade-up" class="blog-card w-100">
+                        <img src="Images/home/blog1.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h4>10 Must-Know Digital Marketing Trends In 2023
+                            </h4>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" class="blog-card w-100">
+                        <img src="Images/home/blog2.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h4>The Importance Of Responsive Web Design For Your Business
+                            </h4>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="blog-card w-100">
+                        <img src="Images/home/blog3.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h4>How To Create A Successful Social Media Strategy
+                            </h4>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+
+
+        <!-- <section class="service">
+            <div class="service-1">
+                <div class="container">
+                    <div class="service-data" data-aos="fade-down">
+                        <div class="w-66">
+                            <div class="flex gap-1">
+                                <hr class="service-hr1">
+                                <h5>SERVICES</h5>
+                            </div>
+                            <h2 class="mt-15">Services We Offer</h2>
+                            <p class="mt-15">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum
+                                has been the industry's standard dummy text ever.
+                            </p>
+                        </div>
+                        <div class="w-33 mt-15 flex flex-end">
+                            <a href="services.html" class="btn-secondary">View All Services</a>
+                        </div>
+                        <hr class="mt-15 mb-15">
+                    </div>
+                    <div class="flex gap-1 mt-15 s-card">
+                        <div class="service-card" data-aos="fade-down">
+                            <figure><img src="Images/icon/slider1.png" alt="slider1"></figure>
+                            <h3>UI/UX Design</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever.
+                            </p>
+                            <a href="services.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="service-card" data-aos="fade-up">
+                            <figure><img src="Images/icon/slider2.png" alt="slider2"></figure>
+                            <h3>DEVELOPMENT</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever.
+                            </p>
+                            <a href="services.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="service-card" data-aos="fade-down">
+                            <figure><img src="Images/icon/slider3.png" alt="slider3"></figure>
+                            <h3>Visual Design</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever.
+                            </p>
+                            <a href="services.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+        <!-- ====== 1.15. Footer section ====== -->
+
+        <section id="contactForm" class="contact-us-form">
+            <div class="container">
+                <div>
+                </div>
+                <div class="contact-form">
+                    <h1><span class="gradient-text-3" >Contact us</span></h1>
+                    <p>Please don't hesitate to contact us via this form if you want to participate in our research, have anything you would like to share, or want to sign up to join <i>The Mind's Ear and Inner Voice 2025</i>. We will reply as soon as possible and are looking forward to hearing from you.</p>
+                    <form action="https://formspree.io/f/mzbnngbk" method="post">
+                        <label for="name">NAME</label>
+                        <input type="text" id="name" name="name" placeholder="e.g. Suzanne" required>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" placeholder="e.g. julia.smith@gmail.com" required>
+                        <label for="message">MESSAGE</label>
+                        <textarea id="message" name="message" rows="10" placeholder="Let us know" required></textarea>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="agree"> I agree with the processing of personal data.
+                        </label>
+                        <button type="submit">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </section> 
+
+        
+
+
+        <footer>
+            <div class="container">
+                <div class="footer-top-wrapper">
+                    <a href="#" class="footer-logo-link">
+                        <div class="footer-logo">
+                            <img src="./images/contrastlogo.png" alt="">
+                        </div>
+                    </a>
+                    <div class="footer-link-list">
+                        <a href="/" class="footer_link">Home</a>
+                        <a href="/research" class="footer_link">Research</a>
+                        <a href="/posts" class="footer_link">Resources</a>
+                        <a href="/anauralia" class="footer_link">Publications</a>
+                        <a href="/team" class="footer_link">Collaboration</a>
+                        <a href="/conference" class="footer_link">Participate</a>
+                    </div>
+                </div>
+                <div class="line-divider"></div>
+                <div class="footer-bottom-wrapper">
+                    <div class="footer-credit-text">© <span class="text-year">2024</span> Whanau Talk</div>
+                </div>
+            </div>
+            
+        </footer>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+
+
+    
+
+
+
+
+
+    <!-- end site wrapper -->
+
+
+    <!-- button back to top -->
+    <button onclick="scrollToTop()" id="backToTop" class="btn-light"><i
+            class="fa-solid fa-arrow-turn-up"></i></button>
+
+  
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 1250,
+            once: true,
+        });
+    </script>
+
+    <!-- jquery js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery min js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- slick carousel min js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A=" crossorigin="anonymous"></script>
+
+    <!-- custom js -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
